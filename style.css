@@ -179,13 +179,17 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.logo-text {
+/* .logo-text {
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--primary-color);
     padding: var(--spacing-lg) var(--spacing-xl);
     background-color: var(--secondary-color);
     border-radius: var(--radius-xl);
+} */
+.logo-image {
+    height: 80px; /* Sesuaikan tinggi logo */
+    width: auto; /* Biarkan lebar menyesuaikan proporsi */
 }
 
 .nav-menu {
@@ -302,8 +306,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== FOOTER ===== */
 .footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: var(--spacing-2xl) 0 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .footer-content {
@@ -319,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-title {
-    color: var(--text-secondary);
+    color: var(--secondary-color);
     font-size: var(--font-size-md);
     font-weight: 700;
     margin-bottom: var(--spacing-xl);
@@ -357,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-bottom {
     border-top: 1px solid #e5e5e5;
-    padding: var(--spacing-lg) 0;
+    padding: 4px 0; /* ← Ubah dari var(--spacing-lg) menjadi 12px */
 }
 
 .footer-bottom-content {
@@ -368,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .copyright {
     color: var(--text-light);
-    font-size: var(--font-size-sm);
+    font-size: 13px; /* ← Perkecil sedikit font copyright */
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -422,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .footer-bottom-content {
         flex-direction: column;
-        gap: var(--spacing-md);
+        gap: 16px; /* ← Tambahkan gap yang lebih kecil */
         text-align: center;
     }
 }
@@ -454,3 +459,4 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
 }
+
